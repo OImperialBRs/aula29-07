@@ -1,4 +1,5 @@
 import { Documento } from "./Documento";
+import { Fabricante } from "./Fabricante";
 
 export class Veiculo{
     private _documento: Documento[];
