@@ -1,4 +1,15 @@
+import { constructor } from "typescript";
+
 export class Pessoa{
+    set_dataNascimento(arg0: Date) {
+        throw new Error("Method not implemented.");
+    }
+    set_cpf(arg0: number) {
+        throw new Error("Method not implemented.");
+    }
+    set_nome(arg0: string) {
+        throw new Error("Method not implemented.");
+    }
     export class Pessoa{
         private _nome: string;
         private _cpf: number;
