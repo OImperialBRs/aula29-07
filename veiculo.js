@@ -1,58 +1,50 @@
-import { Documento } from "./Documento";
-export class Veiculo{
-    private _documento: Documento;
-    private _modelo: string;
-    private _cor: string;
-    private _quilometragem: number;
-    private _nivelDeUso: string;
-    
-    constructor (_documento:Documento, _modelo:string, _cor:string, quilometragem:number, nivelDeUso:string){};
-
-    get_documento(){
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Veiculo = void 0;
+var Veiculo = /** @class */ (function () {
+    function Veiculo(_documento, _modelo, _cor, quilometragem, nivelDeUso) {
+    }
+    ;
+    Veiculo.prototype.get_documento = function () {
         return this._documento;
-    }
-
-    set_documento(_documento:Documento){
-        this._documento=_documento;
-    }
-
-    get_modelo(){
+    };
+    Veiculo.prototype.set_documento = function (_documento) {
+        this._documento = _documento;
+    };
+    Veiculo.prototype.get_modelo = function () {
         return this._modelo;
-    }
-
-    set_modelo(_modelo:string){
-        this._modelo=_modelo;
-    }
-
-    get_cor(){
+    };
+    Veiculo.prototype.set_modelo = function (_modelo) {
+        this._modelo = _modelo;
+    };
+    Veiculo.prototype.get_cor = function () {
         return this._cor;
-    }
-
-    set_cor(_cor:string){
-        this._cor=_cor;
-    }
-
-    get_quilometragem(){
+    };
+    Veiculo.prototype.set_cor = function (_cor) {
+        this._cor = _cor;
+    };
+    Veiculo.prototype.get_quilometragem = function () {
         return this._quilometragem;
-    }
-
-    set_quilometragem(_quilometragem:number){
-        this._quilometragem=_quilometragem;
-    }
-
-    get_nivelDeUso(){
+    };
+    Veiculo.prototype.set_quilometragem = function (_quilometragem) {
+        this._quilometragem = _quilometragem;
+    };
+    Veiculo.prototype.get_nivelDeUso = function () {
         return this._nivelDeUso;
-    }
-
-    set_nivelDeUso(_quilometragem:number){
-        if(_quilometragem<=30000){
-        this._nivelDeUso="Baixo Km";
+    };
+    Veiculo.prototype.set_nivelDeUso = function (_quilometragem) {
+        if (_quilometragem <= 30000) {
+            this._nivelDeUso = "Baixo Km";
         }
-        else if(_quilometragem<=70000){
-            this._nivelDeUso="Médio Km";
-            }
-            else (_quilometragem>70000);{
-                this._nivelDeUso="Alto Km";
-                }
-    }
-}
+        else if (_quilometragem <= 70000) {
+            this._nivelDeUso = "Médio Km";
+        }
+        else
+            (_quilometragem > 70000);
+        {
+            this._nivelDeUso = "Alto Km";
+        }
+    };
+    return Veiculo;
+}());
+exports.Veiculo = Veiculo;
